@@ -10,4 +10,4 @@ To compile and run any of the programs in this repository, ensure you have the [
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/Java-AUK.git](https://github.com/yourusername/Java-AUK.git)
+   git clone [https://github.com/Ridreb05/Java_Lab.git]

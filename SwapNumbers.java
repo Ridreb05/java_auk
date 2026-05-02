@@ -1,25 +1,32 @@
 class SwapNumbers {
-    int num;
-    SwapNumbers(int n){
-      num = n;
+    int a, b;
+
+    // Constructor
+    SwapNumbers(int x, int y) {
+        a = x;
+        b = y;
     }
-    void swap(){
-        int temp = thisnum;
-        this.num = objnum;
-        obj.num = temp;
+
+    // Member function
+    void swap() {
+        int temp = a;
+        a = b;
+        b = temp;
     }
-    void display(){
-        System.out.println("The number is " + num);
+
+    void display() {
+        System.out.println("a = " + a + ", b = " + b);
     }
+
     public static void main(String[] args) {
-        SwapNumbers obj1 = new SwapNumbers(5);
-        SwapNumbers obj2 = new SwapNumbers(10);
-        System.out.println("Before swapping:");
-        obj1.display();
-        obj2.display();
-        obj1.swap(obj2);
-        System.out.println("After swapping:");
-        obj1.display();
-        obj2.display();
+        SwapNumbers obj = new SwapNumbers(5, 10);
+
+        System.out.println("Before Swapping:");
+        obj.display();
+
+        obj.swap();
+
+        System.out.println("After Swapping:");
+        obj.display();
     }
 }

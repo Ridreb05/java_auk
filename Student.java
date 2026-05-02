@@ -1,16 +1,20 @@
 class Student {
+    int rollNo;
     String name;
-    int age ;
-    Student(String n, int a){
+
+    // Parameterized Constructor
+    Student(int r, String n) {
+        rollNo = r;
         name = n;
-        age = a;
     }
-    void display(){
-        System.out.println("The name of the student is " + name);
-        System.out.println("The age of the student is " + age);
+
+    void display() {
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Name: " + name);
     }
+
     public static void main(String[] args) {
-        Student s1 = new Student("Debanik", 20);
+        Student s1 = new Student(101, "Harmeet");
         s1.display();
     }
 }

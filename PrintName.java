@@ -1,13 +1,5 @@
 class PrintName {
- String name;
- 
- void display(){
-    System.out.println("My name is " + name);
- }
-
- public static void main(String[] args) {
-    PrintName obj = new PrintName();
-    obj.name = "Debanik Das";
-    obj.display();
+    public static void main(String[] args) {
+        System.out.println("Harmeet Kaur");
     }
 }

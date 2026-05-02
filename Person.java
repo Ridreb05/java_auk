@@ -1,22 +1,36 @@
 class Person {
     String name;
     int age;
-    Person(){
+
+    // Constructor 1
+    Person() {
         name = "Unknown";
         age = 0;
     }
-    Person(String n, int a){
+
+    // Constructor 2
+    Person(String n) {
+        name = n;
+        age = 18;
+    }
+
+    // Constructor 3
+    Person(String n, int a) {
         name = n;
         age = a;
     }
-    void display(){
-        System.out.println("The name of the person is " + name);
-        System.out.println("The age of the person is " + age);
+
+    void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
     }
+
     public static void main(String[] args) {
         Person p1 = new Person();
+        Person p2 = new Person("Harmeet");
+        Person p3 = new Person("Simran", 21);
+
         p1.display();
-        Person p2 = new Person("Debanik", 20);
         p2.display();
+        p3.display();
     }
 }
